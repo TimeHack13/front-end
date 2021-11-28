@@ -1,80 +1,54 @@
-import { useState } from "react"
 import TextField from '@material-ui/core/TextField';
+import { useState } from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-
+import './style.css';
 
 const useStyles = makeStyles((theme) => ({
-    img:{
-        width:'50px'
-    },
-    root:{
-        display:'flex',
-        flexDirection:'column',
-        alignItems:'center',
-        gap:'10px'
+    button:{
+        border:'1px solid #fff',
+        
+        'label + &': {
+            color:'#fff',
+          },
     }
   }));
-
-function CadastroUsuario(){
-    const [dadosForm, setDadosForm] = useState({});
+export default function CadastroUsuario(){
     const [nome, setNome] = useState("")
-    const [nomeSocial, setNomeSocial] = useState("")
-    const [email, setEmail] = useState("")
     const [senha, setSenha] = useState("")
-    const [avatar, setAvatar] = useState("")
+    const [email, setEmail] = useState("")
     const classes = useStyles();
-
-    function handleSubmit(e){
-        e.preventDefault()
-        setDadosForm([{
-            nome,
-            nomeSocial,
-            email,
-            senha,
-            avatar
-        }])
-    }
-
+    
     return(
-        <form onSubmit={handleSubmit} className={classes.root}>
-            <TextField
-                required
-                
-                label="Nome"
-                placeholder="Insira seu Nome"
-                variant="outlined"
-                value={nome}
-                onChange={(e)=>setNome(e.target.value)} 
-            />
-            <TextField
-                required
-                
-                label="Nome Social"
-                placeholder="Insira seu Nome Social"
-                variant="outlined"
-                value={nomeSocial}
-                onChange={(e)=>setNomeSocial(e.target.value)}
-            />
-            <TextField
-                required
-                label="Email"
-                type="email"
-                placeholder="Insira seu Email"
-                variant="outlined"
-                value={email}
-                onChange={(e)=>setEmail(e.target.value)}
-            />
-            <TextField
-              variant="outlined"
-              label="Senha"
-              type="password"
-              value={senha}
-              onChange={(e)=>setSenha(e.target.value)}
-            />
-            <Button variant="contained" type="submit"color="primary"
-                size="large">Enviar</Button> 
-        </form>
+        <div className="cadUsuario">
+            <h2>Cadastra-se</h2>
+            <form action="">
+                <input
+                    required 
+                    type="text" 
+                    id="name" 
+                    placeholder="Nome" 
+                    value={nome}
+                    onChange={(e)=>setNome(e.target.value)} 
+                />
+                <input
+                    required 
+                    type="email" 
+                    id="email" 
+                    placeholder="Email" 
+                    value={email}
+                    onChange={(e)=>setEmail(e.target.value)} 
+                />               
+                <input
+                    required 
+                    type="password" 
+                    id="senha" 
+                    placeholder="Senha" 
+                    value={senha}
+                    onChange={(e)=>setSenha(e.target.value)} 
+                />
+                <button>Cadastrar-se</button>
+            </form>   
+
+        </div>
     )
 }
-export default CadastroUsuario

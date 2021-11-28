@@ -4,6 +4,7 @@ import Avaliacao from "./pages/avaliacao";
 import Login from "./pages/login";
 import Sobre from "./pages/sobre";
 import RotasProtegidas from "./components/RotasProtegidas";
+import Buscar from "./pages/buscar";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/avaliacao" element={<Avaliacao />}/>  
                 <Route path="/sobre" element={<Sobre />} /> 
+                <Route path="/buscar" element={<Buscar />} /> 
                 
               </Routes>
           </Router>

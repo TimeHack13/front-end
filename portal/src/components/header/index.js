@@ -1,17 +1,19 @@
 import './style.css'
+import{Link} from 'react-router-dom'
+
 export default function Header(){
     return(
         <div className="header">
-            <img src="./assets/logo.svg" alt=""/>
+            <Link to="/home"><img src="./assets/logo.svg" alt=""/></Link>
             <div className="menu">
                 <div className="itensMenu">
-                    <a href="#">Avaliar</a>
-                    <a href="#">Buscar</a>
-                    <a href="#">Sobre</a>
+                    <Link to="/avaliacao">Avaliar</Link>
+                    <Link to="/buscar">Buscar</Link>
+                    <Link to="/sobre">Sobre</Link>
                 </div>
                 <div className="login">
-                    <a href="#" className="log">Login</a>
-                    <a href="#" className="cadastrar">Cadastrar</a>
+                    <Link to="/" className="log">Login</Link>
+                    <Link to="/" className="cadastrar">Cadastrar</Link>
                 </div>
             </div>
         </div>
