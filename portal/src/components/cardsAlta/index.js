@@ -1,7 +1,7 @@
 import { Rating } from '@material-ui/lab';
 import './style.css'
 
-export default function Card(){
+export default function CardAlta(){
     
     const dados =[
         {
@@ -32,7 +32,7 @@ export default function Card(){
      
     return(
         <div className='container'>
-            <p>Em Alta</p>
+            <p className="titleCard">Em Alta</p>
             <div className='containerCard'>
                 {dados.map(item=>(
                     <div className="card" key={item.img}>
