@@ -1,4 +1,4 @@
-import { Navigate, Route, Outlet } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 
 function RotasProtegidas() {
    const  token  = window.localStorage.getItem("logado")

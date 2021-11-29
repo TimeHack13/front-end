@@ -1,4 +1,6 @@
 import'./style.css'
+import{Link} from 'react-router-dom'
+
 export default function TerceiraSection(){
     return(
         <div className="terceira-section">
@@ -7,7 +9,7 @@ export default function TerceiraSection(){
                 <img src="./assets/seloMaior.png" alt="selo" />
                 <div className="descricao">
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <a href="#">Saiba Mais > </a>
+                    <Link to="/sobre">Saiba Mais </Link>
                 </div>
                 
             </div>
