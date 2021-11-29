@@ -14,12 +14,12 @@ function App() {
         
           <Router>
               <Routes>
-                <Route exact path="https://hypeplace.netlify.app/login" element={<Login />} />
-                <Route path="https://hypeplace.netlify.app/" exact element={<RotasProtegidas />}> 
-                  <Route path="https://hypeplace.netlify.app/home" element={<Home />} />
-                  <Route path="https://hypeplace.netlify.app/avaliacao" element={<Avaliacao />}/>  
-                  <Route path="https://hypeplace.netlify.app/sobre" element={<Sobre />} /> 
-                  <Route path="https://hypeplace.netlify.app/buscar" element={<Buscar />} />
+                <Route exact path="/login" element={<Login />} />
+                <Route path="/" exact element={<RotasProtegidas />}> 
+                  <Route path="/home" element={<Home />} />
+                  <Route path="/avaliacao" element={<Avaliacao />}/>  
+                  <Route path="/sobre" element={<Sobre />} /> 
+                  <Route path="/buscar" element={<Buscar />} />
                 </Route>                  
               </Routes>
           </Router>
