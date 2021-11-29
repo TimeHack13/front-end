@@ -1,4 +1,5 @@
 import './style.css'
+import{Link} from 'react-router-dom'
 export default function Footer() {
     return(
         <div className="footer">
@@ -19,7 +20,7 @@ export default function Footer() {
                 <div className="contato">
                     <label htmlFor="">Inscreva-se para receber novidades</label>
                     <input type="text" placeholder="Digite seu melhor email"/>
-                    <button>Cadastra-se</button>
+                    <Link to="/"><button>Cadastra-se</button></Link>
                 </div>
             </div>
             <p className="copyright">©2021 Todos os direitos reservados pela Rainbow</p>

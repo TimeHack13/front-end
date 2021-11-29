@@ -38,10 +38,10 @@
   padding: initial;
   border: initial;
 }
+
 .button {
   margin-left: 25%;
-}
-.button button {
   background-color: #6061f6;
   color: #fff;
+  cursor: pointer;
 }

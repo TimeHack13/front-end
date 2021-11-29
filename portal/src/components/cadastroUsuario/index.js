@@ -1,27 +1,39 @@
-import TextField from '@material-ui/core/TextField';
 import { useState } from "react";
-import { makeStyles } from '@material-ui/core/styles';
 import './style.css';
 
-const useStyles = makeStyles((theme) => ({
-    button:{
-        border:'1px solid #fff',
-        
-        'label + &': {
-            color:'#fff',
-          },
-    }
-  }));
+
 export default function CadastroUsuario(){
     const [nome, setNome] = useState("")
     const [senha, setSenha] = useState("")
     const [email, setEmail] = useState("")
-    const classes = useStyles();
+   
+   
+
+    async function handleAddUsuario(event){
+        event.preventDefault()
+        const data ={
+            nome,
+            senha,
+            email
+        }
+        await fetch('https://hypeplaceapp.herokuapp.com/usuario/cadastrar',{
+            method:'POST',
+            headers:{
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+
+        setNome("")
+        setSenha("")
+        setEmail("")
+    }
+
     
     return(
         <div className="cadUsuario">
             <h2>Cadastra-se</h2>
-            <form action="">
+            <form onSubmit={handleAddUsuario}>
                 <input
                     required 
                     type="text" 
@@ -46,7 +58,7 @@ export default function CadastroUsuario(){
                     value={senha}
                     onChange={(e)=>setSenha(e.target.value)} 
                 />
-                <button>Cadastrar-se</button>
+                <button type="submit" className="btn">Cadastrar-se</button>
             </form>   
 
         </div>

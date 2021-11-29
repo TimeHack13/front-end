@@ -1,3 +1,6 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
 .sectionAvaliar {
   display: flex;
   justify-content: center;

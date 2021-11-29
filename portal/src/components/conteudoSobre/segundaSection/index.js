@@ -4,12 +4,16 @@ export default function SegundaSection(){
         <div className="containerSobre">
             <h1>Sobre a gente</h1>
             <div className="textSobre">
-                <p>Somos uma empresa X, com valores Y, acreditamos nisso nisso e naquilo para que o mundo possar ser melhor para a comunidade LGBTQIA+ Lorem IPSUM LOREM IPSUM
-                Somos uma empresa X, com valores Y, acreditamos nisso nisso e naquilo para que o mundo possar ser melhor para a comunidade LGBTQIA+ Lorem IPSUM LOREM IPSUM
-                Somos uma empresa X, com valores Y, acreditamos nisso nisso e naquilo para que o mundo possar ser melhor para a comunidade LGBTQIA+ Lorem IPSUM LOREM IPSUM Somos uma empresa X, com valores Y, </p>
-                <p>Somos uma empresa X, com valores Y, acreditamos nisso nisso e naquilo para que o mundo possar ser melhor para a comunidade LGBTQIA+ Lorem IPSUM LOREM IPSUM
-                Somos uma empresa X, com valores Y, acreditamos nisso nisso e naquilo para que o mundo possar ser melhor para a comunidade LGBTQIA+ Lorem IPSUM LOREM IPSUM
-                Somos uma empresa X, com valores Y, acreditamos nisso nisso e naquilo para que o mundo possar ser melhor para a comunidade LGBTQIA+ Lorem IPSUM LOREM IPSUM Somos uma empresa X, com valores Y, </p>
+                <p>
+                    Os lugares com as melhores avaliações recebem um Selo de Aliado HypePlace. 
+                    Isso quer dizer que a comunidade LGBTQIA+ se uniu, avaliou muito e escolheu o comércio como um dos melhores e mais seguros da cidade. Ai que emoção! 
+
+                    Os lugares com as melhores avaliações recebem um Selo de Aliado HypePlace / Rainbow Place. 
+                    Isso quer dizer que a comunidade LGBTQIA+ se uniu, avaliou muito e escolheu o comércio como um dos melhores e mais seguros da cidade. Ai que emoção! 
+                </p>
+                <p>
+                    essa forma ajudamos outras POCs a frequentarem os lugares certos, se jogando, batendo cabelo e curtindo muito sem medo de ser feliz! Aloca!
+                </p>
             </div>
             <h2>Fale com a gente!</h2>
             <div className="contatoSobre">

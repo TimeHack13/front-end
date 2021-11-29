@@ -17,3 +17,7 @@ input {
 input::placeholder {
   color: #fff;
 }
+
+.btn {
+  cursor: pointer;
+}

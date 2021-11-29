@@ -6,7 +6,7 @@ import './style.css'
 export default function Buscar(){
     return(
         <>
-            <Header/>
+            <Header tag="buscar"/>
             <div className="sectionBuscar">
                 <img src="./assets/logo.svg" alt="Logo"  className="logoBuscar"/>
                 <ConteudoBuscar/>

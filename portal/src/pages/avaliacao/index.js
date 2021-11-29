@@ -6,7 +6,7 @@ import './style.css'
 function Avaliacao() {
    return (
       <div className="avaliacao">
-         <Header/>
+         <Header tag="aval"/>
          <div className="sectionAvaliar">
             <img src="./assets/background-avaliar.svg" alt=""/>
             <div className="titleAvaliar">
