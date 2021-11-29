@@ -26,7 +26,7 @@ export default function CardMelhor(){
             img:'./assets/bestQuality-img4.svg',
             selo:true,
             title:"Seu Regueira",
-            avaliacao:100
+            avaliacao:80
         },
     ]
      
