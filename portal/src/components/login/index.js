@@ -22,6 +22,7 @@ export default function LoginSite(){
       console.log(response.status)
 
       window.localStorage.setItem("logado",response.status)
+      
     //   window.localStorage.removeItem("logado") ----- codigo para no futuro quando sair da conta
       setEmail("")
       setSenha("")
