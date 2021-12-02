@@ -1,13 +1,15 @@
-
+import { useNavigate} from "react-router-dom";
 import { useState } from "react"
 import './style.css'
 
 export default function LoginSite(){
     const [email, setEmail] = useState("")
     const [senha, setSenha] = useState("")
+    const navigate = useNavigate()
     
     async function handleConfirmation(event){
         event.preventDefault()
+        
         const dados ={
             email,
             senha
@@ -19,12 +21,11 @@ export default function LoginSite(){
         },
         body: JSON.stringify(dados),
       }).then(res => res.json() );
-      console.log(response.status)
-
+      
       window.localStorage.setItem("logado",response.status)
-    //   window.localStorage.removeItem("logado") ----- codigo para no futuro quando sair da conta
       setEmail("")
       setSenha("")
+      navigate("/home")
 
     }
     

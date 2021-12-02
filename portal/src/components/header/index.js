@@ -17,8 +17,8 @@ export default function Header({tag}){
                     <Link to="/sobre"className={tag === 'sobre' ? 'select' : ''}>Sobre</Link>
                 </div>
                 <div className="login">
-                    <Link to="/login" className="log">Login</Link>
-                    <Link to="/login" className="cadastrar" onClick={handleClick}>Cadastrar</Link>
+                    <Link to="/" className="log">Login</Link>
+                    <Link to="/" className="cadastrar" onClick={handleClick}>Cadastrar</Link>
                 </div>
             </div>
         </div>
